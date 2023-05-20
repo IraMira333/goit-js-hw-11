@@ -2,10 +2,18 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.section {
+  background-color: teal;
+  padding-top: 50px;
+  outline: 1px solid rosybrown;
+}
 .form-wrap {
   text-align: left;
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  outline: 1px solid rosybrown;
 }
 
 .gallery {
