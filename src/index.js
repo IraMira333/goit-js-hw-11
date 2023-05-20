@@ -65,7 +65,7 @@ function handleFetchRequest(searchQuery) {
         }).refresh();
       }
     })
-    .catch(error => Notiflix.Notify.failure(error));
+    .catch(error => Notify.failure(error));
 }
 
 function onLoadMore() {
