@@ -36,7 +36,7 @@ function onFormSubmit(event) {
     handleFetchRequest(searchQuery);
     addInfiniteScroll();
   } else {
-    Notiflix.Notify.failure('Search query is empty');
+    Notify.failure('Search query is empty');
     return;
   }
   formEl.reset();
@@ -80,12 +80,12 @@ function onLoadMore() {
         smoothScrolling();
       })
       .catch(error => {
-        Notiflix.Notify.warning(error.response.data);
+        Notify.warning(error.response.data);
       });
   } else {
     options.page = 0;
     removeInfiniteScroll();
-    Notiflix.Notify.warning(
+    Notify.warning(
       "We're sorry, but you've reached the end of search results."
     );
   }
